@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            height: auto;
+            width: 100%;
+        }
+        .container-fluid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: auto;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            letter-spacing: .15px;
+            color: rgb(37, 37, 37);
+            margin-right: -11px;
+        }
+        .nav{
+            grid-column: 1/3;
+            background-color: rgb(0, 10, 36);
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 30px;
+            height: 100px;
+            font-size: 18px;
+           
+
+        }
+        .space{
+          padding-top: 200px;
+        }
+        .lineups{
+          text-align: center;
+        }
+        a:link {
+            color: rgb(212, 245, 255);
+            }
+
+            /* visited link */
+        a:visited {
+            color: rgb(90, 193, 201);
+            }
+
+            /* mouse over link */
+        a:hover {
+            color: hotpink;
+            }
+
+            /* selected link */
+        a:active {
+            color: rgb(109, 109, 243);
+            }
+        h1{
+            text-align: center;
+            font-size: 55px;
+        }
+        h2{
+            text-align: center;
+            color: grey;
+        }
+        p{
+          line-height: 40px;
+        }
+        .carousel{
+            grid-column: 1/3;
+            height: auto;
+        }
+        .box-1{
+            grid-column: 1/3;
+            text-align: left;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding: 26px;
+        }
+        .box-2-Cs{
+          background-image: url(/images/tdgarden.jpg);
+          height: 550px;
+          background-color: #cccccc;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center;
+          grid-column: 1/3;
+          padding-top: 200px;
+          padding-bottom: 25px;
+          color: white;
+        }
+        .box-3{
+            grid-column: 1/2;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding: 26px;
+            line-height: 40px;
+        }
+        .box-4{
+          grid-column: 2/3;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding: 26px;
+          margin-top: 20px;
+        }
+        .c-stats{
+          grid-column: 1/3;
+          height: 200px;
+        }
+        .box-5-lyn{
+          background-image: url(/images/brook.jpg);
+          height: 550px;
+          background-color: #cccccc;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: bottom;
+          grid-column: 1/3;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 200px;
+        }
+        .box-6{
+          grid-column: 1/2;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding: 26px;
+          line-height: 40px;
+        }
+        .box-7{
+          grid-column: 2/3;
+          margin-top: 20px;
+          padding: 26px;
+        }
+        .box-suns{
+          grid-column: 1/3;
+          padding-top: 225px;
+          background-image: url(/images/phoe.jpg);
+          height: 550px;
+          background-color: #cccccc;
+          background-repeat: no-repeat;
+          background-size: 100%;
+        }
+        .box-8{
+          grid-column: 1/2;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding: 26px;
+          line-height: 40px;
+        }
+        .box-9{
+          grid-column: 2/3;
+          margin-top: 20px;
+          padding: 26px;
+        }
+        .box-wars{
+          grid-column: 1/3;
+          grid-column: 1/3;
+          padding-top: 225px;
+          background-image: url(/images/oracle.jpg);
+          height: 550px;
+          background-color: #cccccc;
+          background-repeat: no-repeat;
+          background-position: bottom;
+          background-size: 100%;
+        }
+        .box-10{
+          grid-column: 1/2;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding: 26px;
+          line-height: 40px;
+        }
+        .box-11{
+          grid-column: 2/3;
+          margin-top: 20px;
+          padding: 26px;
+        }
+        .footer-1{
+          height: auto;
+          grid-column: 1/2;
+          display: flex;
+          background-color: rgb(196, 196, 196);
+        }
+        .footer-2{
+          height: auto
+          grid-column: 2/3;
+          background-color: rgb(196, 196, 196);
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <! --- HTML PAGE content starts here --- >    
+
+  <div class="container-fluid">
+    
+        <div class="nav" style="font-size: 18px;">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Teams
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#Celtics">Celtics</a>
+              <a class="dropdown-item" href="#Nets">Nets</a>
+              <a class="dropdown-item" href="#Suns">Suns</a>
+              <a class="dropdown-item" href="#Warriors">Warriors</a>
+            </div>
+          </div>
+        </div>
+
+        <! --- carousel --- >
+
+        <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/curry.jpg" class="d-block w-100" alt="Steph Curry">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/kd.jpg" class="d-block w-100" alt="Kevin Durant">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/jt.jpg" class="d-block w-100" alt="Jayson Tatum">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/db.jpg" class="d-block w-100" alt="Devin Booker">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <! --- words and stuff --- >
+
+        <div class="box-1">
+            <h1>NBA Finals Predictions</h1>
+            <p>The NBA Playoffs are here. That means the five most dangerous teams to watch are also here. 82 games in an NBA season all lead up to this. The 1 to 8 seeds all battle it out for the Larry O'Brien Trophy. This year's playoffs are one to remember, the stars of the 2010s are teamed up against the next generation of NBA superstars. Now that the NBA has introduced the play-in tournament more teams have a chance to win. This year the East and West have some juggernauts and dark horse teams. The West is typically the better division but now there is a case to be made that the East could win it all. I have researched, watched, followed, and evaluated which teams I believe have the best shot at winning it all this year. Originally I had selected 3 teams from each division but I have since narrowed it down to per division. Below I will be showing my reasons and explanations as to why these teams are championship material.</p>
+        </div>
+       
+        <! --- The Celtics --- >
+
+        <div id="Celtics" class="box-2-Cs">
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4" style="font-size: 70px;">The Celtics</h1>
+              <p class="lead" style="text-align: center;">Luck of the Irish</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-3">
+          <p><h2>Boston Celtics</h2> The Celtic's have one of the youngest cores in the NBA built around franchise players Jayson Tatum and Jalen Brown. The C's have been on a defense lockdown lately. They have held Kyrie Irving and KD to sub 35 percent from the field. They have been in the top five defense ratings for the last few months. Rookie Coach Ime Udoka has been living up to his expectations and raising the bar on how to connect with a team. His age, being so young, has made a huge impact on and off the floor. This team has the potential to make a deep run for the title this year and for years to come if they keep up the bulldog mentality. Getting the ball to everyone, locking down on defense, and playing Celtics basketball. Below are their stats.</p>
+        </div>
+
+        <div class="box-4">
+          <div class="lineups">
+            <h2>Lineup</h2>
+            <p>Marcus Smart<br>
+              Jaylen Brown<br>
+              Jayson Tatum<br>
+              Al Horford<br>
+              Daniel Theis<br>
+            </p>
+          </div>
+        </div>
+        
+        <div class="c-stats" style="padding-bottom: 40px; margin-bottom: 80px;">
+          <img src="/images/c-stats.png" alt="Celtics stats">
+        </div>
+
+        <div class="space">
+          <! --- Space maker --- >
+        </div>
+        <! --- The Nets --- >
+
+        <div id="Nets" class="box-5-lyn">
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4" style="color: white; font-size: 70px;">The Nets</h1>
+              <p class="lead" style="color: black; text-align: center;">Pacific Threat</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-6">
+          <p><h2>Brooklyn Nets</h2>This Brooklyn Nets team is the definition of firepower. Kevin Durant is a sniper, 2-way scorer, and free throw machine. Kyrie Irving is one of the greatest, if not the greatest paint scoring point guard and ball-handler of all time. Paired with their excellent side-piece shooters. If the ball starts moving, defenses fall apart. No matter whose hands the ball is in, it has a great chance of falling in. This team has faced three big struggles. Egos, defense, and consistency. The Pandemic threw a wrench in Kyrie and his vaccination status. Coupled with the star status of KD and Kai, this team can't get around themselves. They don't trust each other, but they act like it. If you watch their games. Every miss pulls them just a little more apart from one another. Not to mention, they have a bottom-five defensive rating in the NBA. No ability to collapse, switch fast enough, and their embarrassing late-game defense.</p>
+        </div>
+
+        <div class="box-7">
+          <div class="lineups">
+            <h2>Lineup</h2>
+            <p>Kyrie Irving<br>
+              Seth Curry<br>
+              Bruce Brown<br>
+              Kevin Durant<br>
+              Andre Drummond<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="c-stats" style="padding-bottom: 40px; margin-bottom: 80px;">
+          <img src="/images/brook-stats.png" alt="Nets stats">
+        </div>
+
+        <div class="space">
+          <! --- Space maker --- >
+        </div>
+
+        <! --- The Suns --- >
+
+        <div id="Suns" class="box-suns">
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4" style="color: orange; font-size: 70px;">The Suns</h1>
+              <p class="lead" style="color: lightgray; text-align: center;">Death Valley</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-8">
+          <p><h2>Phoenix Suns</h2>Talent, youth, and vengeance. This suns team made it all the way to the 2021 NBA finals and lost to the Mil. Bucks. This year they finished with the best record in the NBA. This team has been playing to win and shows no signs of slowing down. With the young star, Devin Booker, working alongside veteran Chris Paul, they command the toughest offense and defense combo in the league. They are plagued by injury and late-game pacing issues. The offense needs to stay tight and confident without their bucket getter leading them. From the opening tip to the last buzzer, this team has to keep their cool to get another chance at the Championship. </p>
+        </div>
+
+        <div class="box-9">
+          <div class="lineups">
+            <h2>Lineup</h2>
+            <p>Chris Paul<br>
+              Devin Booker<br>
+              Mikal Bridges<br>
+              Jae Crowder<br>
+              Deandre Ayton<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="c-stats" style="padding-bottom: 40px; margin-bottom: 80px;">
+          <img src="/images/suns-stats.png" alt="Suns stats">
+        </div>
+
+        <div class="space">
+          <! --- Space maker --- >
+        </div>
+
+        <! ---The Warriors--- >
+
+        <div id="Warriors" class="box-wars">
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4" style="color: grey; font-size: 70px;">The Warriors</h1>
+              <p class="lead" style="color: yellow; text-align: center;">Dynast Living</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-10">
+          <p><h2>Golden State Warriors</h2>The Golden State Warriors. No introduction is needed. The Warriors Dynasty has taken a two-year break. They dominated from 2014 to 2019. After two years of bad injuries, bad trades, and lack of effort. They have made a statement this year. With the return of Klay Thompson, this team looks like it never left. With a young core following the lead of Stephen Curry, Klay, and Draymond Green the team is in better shape than ever. The issue this team faces is confidence and duration. They are holding a commanding lead in their playoff series so far. That lead will stay strong as long as the young players can defend the score when the leaders are off the court. </p>
+        </div>
+
+        
+
+        <div class="box-11">
+          <div class="lineups">
+            <h2>Lineup</h2>
+            <p>Steph Curry<br>
+              Klay Thompson<br>
+              Andrew Wiggins<br>
+              Draymond Green<br>
+              Kevon Looney<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="c-stats" style="padding-bottom: 40px; margin-bottom: 80px;">
+          <img src="/images/w-stats.png" alt="Warriors stats">
+        </div>
+
+        <div class="footer-1">
+          
+          <button type="button" class="btn btn-primary btn-lg btn-block";" style=" margin-top: 50px; margin-bottom: 50px;padding-left: ;"><a href="https://www.nba.com/" target="_blank">NBA Website</a></button>
+        </div>
+        <div class="footer-2">
+          <img src="/images/logo.png" style="float: right; width: 300px; height: 300px;" alt="My Logo">
+        </div>
+    </div>
+</body>
+</html>
