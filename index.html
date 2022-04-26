@@ -9,193 +9,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        img{
-            height: auto;
-            width: 100%;
-        }
-        .container-fluid{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-auto-rows: auto;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 20px;
-            letter-spacing: .15px;
-            color: rgb(37, 37, 37);
-            margin-right: -11px;
-        }
-        .nav{
-            grid-column: 1/3;
-            background-color: rgb(0, 10, 36);
-            display: flex;
-            justify-content: space-evenly;
-            padding-top: 30px;
-            height: 100px;
-            font-size: 18px;
-           
-
-        }
-        .space{
-          padding-top: 200px;
-        }
-        .lineups{
-          text-align: center;
-        }
-        a:link {
-            color: rgb(212, 245, 255);
-            }
-
-            /* visited link */
-        a:visited {
-            color: rgb(90, 193, 201);
-            }
-
-            /* mouse over link */
-        a:hover {
-            color: hotpink;
-            }
-
-            /* selected link */
-        a:active {
-            color: rgb(109, 109, 243);
-            }
-        h1{
-            text-align: center;
-            font-size: 55px;
-        }
-        h2{
-            text-align: center;
-            color: grey;
-        }
-        p{
-          line-height: 40px;
-        }
-        .carousel{
-            grid-column: 1/3;
-            height: auto;
-        }
-        .box-1{
-            grid-column: 1/3;
-            text-align: left;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding: 26px;
-        }
-        .box-2-Cs{
-          background-image: url(images/tdgarden.jpg);
-          height: 550px;
-          background-color: #cccccc;
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-position: center;
-          grid-column: 1/3;
-          padding-top: 200px;
-          padding-bottom: 25px;
-          color: white;
-        }
-        .box-3{
-            grid-column: 1/2;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding: 26px;
-            line-height: 40px;
-        }
-        .box-4{
-          grid-column: 2/3;
-          padding-left: 10px;
-          padding-right: 10px;
-          padding: 26px;
-          margin-top: 20px;
-        }
-        .c-stats{
-          grid-column: 1/3;
-          height: 200px;
-        }
-        .box-5-lyn{
-          background-image: url(images/brook.jpg);
-          height: 550px;
-          background-color: #cccccc;
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-position: bottom;
-          grid-column: 1/3;
-          padding-left: 10px;
-          padding-right: 10px;
-          padding-top: 200px;
-        }
-        .box-6{
-          grid-column: 1/2;
-          padding-left: 10px;
-          padding-right: 10px;
-          padding: 26px;
-          line-height: 40px;
-        }
-        .box-7{
-          grid-column: 2/3;
-          margin-top: 20px;
-          padding: 26px;
-        }
-        .box-suns{
-          grid-column: 1/3;
-          padding-top: 225px;
-          background-image: url(images/phoe.jpg);
-          height: 550px;
-          background-color: #cccccc;
-          background-repeat: no-repeat;
-          background-size: 100%;
-        }
-        .box-8{
-          grid-column: 1/2;
-          padding-left: 10px;
-          padding-right: 10px;
-          padding: 26px;
-          line-height: 40px;
-        }
-        .box-9{
-          grid-column: 2/3;
-          margin-top: 20px;
-          padding: 26px;
-        }
-        .box-wars{
-          grid-column: 1/3;
-          grid-column: 1/3;
-          padding-top: 225px;
-          background-image: url(images/oracle.jpg);
-          height: 550px;
-          background-color: #cccccc;
-          background-repeat: no-repeat;
-          background-position: bottom;
-          background-size: 100%;
-        }
-        .box-10{
-          grid-column: 1/2;
-          padding-left: 10px;
-          padding-right: 10px;
-          padding: 26px;
-          line-height: 40px;
-        }
-        .box-11{
-          grid-column: 2/3;
-          margin-top: 20px;
-          padding: 26px;
-        }
-        .footer-1{
-          height: auto;
-          grid-column: 1/2;
-          display: flex;
-          background-color: rgb(196, 196, 196);
-        }
-        .footer-2{
-          height: auto
-          grid-column: 2/3;
-          background-color: rgb(196, 196, 196);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 
@@ -207,16 +21,17 @@
     
         <div class="nav" style="font-size: 18px;">
           <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Teams
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#Celtics">Celtics</a>
-              <a class="dropdown-item" href="#Nets">Nets</a>
-              <a class="dropdown-item" href="#Suns">Suns</a>
-              <a class="dropdown-item" href="#Warriors">Warriors</a>
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            Teams
+            </a>
+            
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: rgb(199, 199, 5); color: black;">
+            <li><a class="dropdown-item" href="#Celtics">Celtics</a></li>
+            <li><a class="dropdown-item" href="#Nets">Nets</a></li>
+            <li><a class="dropdown-item" href="#Suns">Suns</a></li>
+            <li><a class="dropdown-item" href="#Warriors">Warriors</a></li>
+            </ul>
             </div>
-          </div>
         </div>
 
         <! --- carousel --- >
